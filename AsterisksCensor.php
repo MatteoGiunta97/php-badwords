@@ -12,7 +12,9 @@ $badWord = $_GET['badWord'];
 </head>
 <body>
     <p>
+        <h1>Paragraph:</h1>
         <?php echo $paragraph; ?>
+        <h2>Length: <?php echo strlen($paragraph); ?> </h2>
     </p>
 </body>
 </html>
