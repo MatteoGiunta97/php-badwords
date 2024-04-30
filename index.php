@@ -12,9 +12,17 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BADWORDS</title>
 </head>
 <body>
-    hello
+    <form action="AsterisksCensor.php" method="get">
+        <label>Paragraph:</label>
+        <textarea name="paragraph" cols="30" rows="10"></textarea>
+
+        <label>Badword:</label>
+        <input type="text" name="badWord">
+        
+        <button type="submit">Censor this word!</button>
+    </form>
 </body>
 </html>
