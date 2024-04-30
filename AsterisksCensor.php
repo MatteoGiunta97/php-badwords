@@ -1,6 +1,7 @@
 <?php 
 $paragraph = $_GET['paragraph'];
 $badWord = $_GET['badWord'];
+$censuredParagraph = str_replace($badWord, '***', $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,8 @@ $badWord = $_GET['badWord'];
     <!-- Sostituisco la parola da censurare con asterischi -->
     <p>
         <h1>Censured Paragraph:</h1>
-        <?php echo str_replace($badWord, '***', $paragraph); ?>
+        <?php echo $censuredParagraph; ?>
+        <h2>Length: <?php echo strlen($censuredParagraph); ?> </h2>
     </p>
 </body>
 </html>
