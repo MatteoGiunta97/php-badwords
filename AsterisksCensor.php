@@ -11,6 +11,8 @@ $badWord = $_GET['badWord'];
     <title>CENSOR</title>
 </head>
 <body>
-    <p></p>
+    <p>
+        <?php echo $paragraph; ?>
+    </p>
 </body>
 </html>
